@@ -1,4 +1,4 @@
-Description:  This is an example of an AWS Cloudformation template in yaml format which deploys a VPC
+Description: This is an example of an AWS Cloudformation template in yaml format which deploys a VPC
 
 Parameters:
   Prefix:
@@ -26,11 +26,11 @@ Resources:
       Tags:
         - Key: Name
           Value: !Join
-                    - ''
-                    - - !Ref Prefix                    
-                      - '-example'
+            - ""
+            - - !Ref Prefix
+              - "-jarh"
         - Key: Environment
-          Value: !Ref Environment          
+          Value: !Ref Environment
 
 Outputs:
   VPC:
