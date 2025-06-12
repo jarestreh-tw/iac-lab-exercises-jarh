@@ -1,11 +1,11 @@
 variable "prefix" {
-  type       = string
-  decription = "Prefix for identifying resources"
+  type        = string
+  description = "Prefix for identifying resources"
 }
 
 variable "region" {
-  type       = string
-  decription = "AWS region"
+  type        = string
+  description = "AWS region"
 }
 
 variable "vpc_cidr" {
@@ -14,31 +14,31 @@ variable "vpc_cidr" {
 }
 
 variable "subnet1_cidr" {
-  type       = string
-  decription = "Subnet 1 CIDR block"
+  type        = string
+  description = "Subnet 1 CIDR block"
 }
 
 variable "subnet2_cidr" {
-  type       = string
-  decription = "Subnet 2 CIDR block"
+  type        = string
+  description = "Subnet 2 CIDR block"
 }
 
 variable "subnet3_cidr" {
-  type       = string
-  decription = "Subnet 3 CIDR block"
+  type        = string
+  description = "Subnet 3 CIDR block"
 }
 
 variable "subnet4_cidr" {
-  type       = string
-  decription = "Subnet 4 CIDR block"
+  type        = string
+  description = "Subnet 4 CIDR block"
 }
 
 variable "subnet5_cidr" {
-  type       = string
-  decription = "Subnet 5 CIDR block"
+  type        = string
+  description = "Subnet 5 CIDR block"
 }
 
 variable "subnet6_cidr" {
-  type       = string
-  decription = "Subnet 6 CIDR block"
+  type        = string
+  description = "Subnet 6 CIDR block"
 }
