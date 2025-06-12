@@ -68,3 +68,22 @@ resource "aws_subnet" "subnet_secure_2" {
     Name = format("%s-secure-subnet-2", var.prefix)
   }
 }
+
+resource "aws_internet_gateway" "igw" {
+  vpc_id = aws_vpc.vpc.id
+  tags = {
+    Name = format("%s-igw", var.prefix)
+  }
+}
+
+resource "aws_eip" "nat" {
+  domain = "vpc"
+}
+
+resource "aws_nat_gateway" "nat" {
+  allocation_id = aws_eip.nat.id
+  subnet_id = aws_subnet.subnet_private_1.id
+  tags = {
+    Name = format("%s-nat", var.prefix)
+  }
+}
